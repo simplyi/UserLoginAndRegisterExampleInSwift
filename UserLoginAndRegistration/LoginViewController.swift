@@ -10,6 +10,9 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var userEmailTextField: UITextField!
+    @IBOutlet weak var userPasswordTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +25,30 @@ class LoginViewController: UIViewController {
     }
     
 
+    @IBAction func loginButtonTapped(sender: AnyObject) {
+        
+        let userEmail = userEmailTextField.text;
+        let userPassword = userPasswordTextField.text;
+        
+        let userEmailStored = NSUserDefaults.standardUserDefaults().stringForKey("userEmail");
+        
+        let userPasswordStored = NSUserDefaults.standardUserDefaults().stringForKey("userPassword");
+        
+        if(userEmailStored == userEmail)
+        {
+            if(userPasswordStored == userPassword)
+            {
+                // Login is successfull
+                NSUserDefaults.standardUserDefaults().setBool(true,forKey:"isUserLoggedIn");
+                    NSUserDefaults.standardUserDefaults().synchronize();
+                
+               self.dismissViewControllerAnimated(true, completion:nil);
+            }
+        }
+        
+        
+    }
+    
     /*
     // MARK: - Navigation
 

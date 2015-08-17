@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94D7A55C1A66319A0027A85F /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D7A55B1A6631990027A85F /* RegisterPageViewController.swift */; };
+		94D7A55E1A66365A0027A85F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D7A55D1A66365A0027A85F /* LoginViewController.swift */; };
 		94F140B41A5F95B100EC1BC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F140B31A5F95B100EC1BC9 /* AppDelegate.swift */; };
 		94F140B61A5F95B100EC1BC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F140B51A5F95B100EC1BC9 /* ViewController.swift */; };
 		94F140B91A5F95B100EC1BC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F140B71A5F95B100EC1BC9 /* Main.storyboard */; };
@@ -26,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		94779FB71B581EF000E12BE9 /* UserLoginAndRegistration copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "UserLoginAndRegistration copy-Info.plist"; path = "/Users/sergeykargopolov/Documents/Sergey/iOS-lessons/Swift/UserLoginAndRegistration/UserLoginAndRegistration copy-Info.plist"; sourceTree = "<absolute>"; };
+		94D7A55B1A6631990027A85F /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
+		94D7A55D1A66365A0027A85F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		94F140AE1A5F95B100EC1BC9 /* UserLoginAndRegistration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserLoginAndRegistration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94F140B21A5F95B100EC1BC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94F140B31A5F95B100EC1BC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +67,7 @@
 				94F140B01A5F95B100EC1BC9 /* UserLoginAndRegistration */,
 				94F140C61A5F95B100EC1BC9 /* UserLoginAndRegistrationTests */,
 				94F140AF1A5F95B100EC1BC9 /* Products */,
+				94779FB71B581EF000E12BE9 /* UserLoginAndRegistration copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +89,8 @@
 				94F140BA1A5F95B100EC1BC9 /* Images.xcassets */,
 				94F140BC1A5F95B100EC1BC9 /* LaunchScreen.xib */,
 				94F140B11A5F95B100EC1BC9 /* Supporting Files */,
+				94D7A55B1A6631990027A85F /* RegisterPageViewController.swift */,
+				94D7A55D1A66365A0027A85F /* LoginViewController.swift */,
 			);
 			path = UserLoginAndRegistration;
 			sourceTree = "<group>";
@@ -156,6 +164,7 @@
 		94F140A61A5F95B100EC1BC9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Sergey Kargopolov";
 				TargetAttributes = {
@@ -212,8 +221,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94D7A55E1A66365A0027A85F /* LoginViewController.swift in Sources */,
 				94F140B61A5F95B100EC1BC9 /* ViewController.swift in Sources */,
 				94F140B41A5F95B100EC1BC9 /* AppDelegate.swift in Sources */,
+				94D7A55C1A66319A0027A85F /* RegisterPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +350,7 @@
 				INFOPLIST_FILE = UserLoginAndRegistration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -349,6 +361,7 @@
 				INFOPLIST_FILE = UserLoginAndRegistration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -405,6 +418,7 @@
 				94F140CF1A5F95B100EC1BC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94F140D01A5F95B100EC1BC9 /* Build configuration list for PBXNativeTarget "UserLoginAndRegistrationTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +427,7 @@
 				94F140D21A5F95B100EC1BC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
